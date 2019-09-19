@@ -49,14 +49,14 @@ const startGame = function () {
     <button>Submit Answers!</button>
     `
     dispQuest = function () {
-        for (i<0; i<trivQuest.length; i++) {
+        for (i < 0; i < trivQuest.length; i++) {
             document.getElementById('question').innerHTML = `
-            <h4>${[i]}</h4>
+            <h4>${i}</h4>
             `
         }
     }
-        
-    
+
+
 
 }
 
