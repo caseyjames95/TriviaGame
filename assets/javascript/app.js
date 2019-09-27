@@ -40,6 +40,15 @@ Any unanswered questions will be counted wrong if timer hits 0.</h4>
 `
 
 // Game start
+const displayQuest = function () {
+    for(i = 0; i < trivQuest.length; i++) {
+        document.getElementById('question').innerHTML = `
+        <h2>${trivQuest.q1}</h2>
+        `
+    }
+
+}
+
 const startGame = function () {
     document.getElementById('tryBtn').innerHTML = ''
     document.getElementById('question').innerHTML = ''
@@ -48,16 +57,7 @@ const startGame = function () {
     document.getElementById('subBtn').innerHTML = `
     <button>Submit Answers!</button>
     `
-    dispQuest = function () {
-        for (i < 0; i < trivQuest.length; i++) {
-            document.getElementById('question').innerHTML = `
-            <h4>${i}</h4>
-            `
-        }
-    }
-
-
-
+    displayQuest()
 }
 
 // End game function
